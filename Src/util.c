@@ -1509,6 +1509,7 @@ void poweroff(void) {
   enable = 0;
   #if defined(DEBUG_SERIAL_USART2) || defined(DEBUG_SERIAL_USART3)
   printf("-- Motors disabled --\r\n");
+  printf("-- poweroff --\r\n");
   #endif
   buzzerCount = 0;  // prevent interraction with beep counter
   buzzerPattern = 0;
